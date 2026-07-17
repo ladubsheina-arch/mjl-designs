@@ -16,9 +16,75 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MJL Designs | Brand Identity & Creative Studio",
+  metadataBase: new URL("https://mjl-designs.vercel.app"),
+
+  title: {
+    default: "MJL Designs | Brand Identity & Creative Studio",
+    template: "%s | MJL Designs",
+  },
+
   description:
-    "Thoughtful branding, logo design, packaging, and creative design for growing businesses.",
+    "MJL Designs creates thoughtful brand identities, logo design, packaging, editorial design, and creative solutions that help businesses stand out with purpose.",
+
+  keywords: [
+    "graphic designer",
+    "branding",
+    "brand identity",
+    "logo design",
+    "packaging design",
+    "editorial design",
+    "creative studio",
+    "visual identity",
+    "MJL Designs",
+    "Philippines graphic designer",
+  ],
+
+  authors: [
+    {
+      name: "Mary Joy Lacsa",
+    },
+  ],
+
+  creator: "Mary Joy Lacsa",
+
+  publisher: "MJL Designs",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "en_PH",
+    url: "https://mjl-designs.vercel.app",
+    title: "MJL Designs | Brand Identity & Creative Studio",
+    description:
+      "Thoughtful branding, logo design, packaging, editorial design, and creative solutions for growing businesses.",
+    siteName: "MJL Designs",
+
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "MJL Designs",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "MJL Designs | Brand Identity & Creative Studio",
+    description:
+      "Thoughtful branding, logo design, packaging, editorial design, and creative solutions.",
+
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
