@@ -85,6 +85,9 @@ export const metadata: Metadata = {
 
     images: ["/og-image.png"],
   },
+  verification: {
+  google: "cahqorzx2aOlVb0joNoy0fZ24ypMlMDUwLwcxstjuJ0",
+},
 };
 
 export default function RootLayout({
