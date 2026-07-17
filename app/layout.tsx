@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 import SiteLayout from "@/components/layout/SiteLayout";
@@ -135,6 +136,8 @@ export default function RootLayout({
         />
         <SiteLayout>{children}</SiteLayout>
       </body>
+
+      <GoogleAnalytics gaId="G-F3P33WJR85" />
     </html>
   );
 }
